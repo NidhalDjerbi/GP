@@ -1,0 +1,25 @@
+.container-narrow {
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.pull-right {
+  float: right;
+}
+
+.nav-tabs, .nav-pills {
+}
+.nav {
+  margin-bottom: 20px;
+  margin-left: 0;
+  list-style: none;
+}
+.active {
+  color: #ffffff;
+  background-color: #0088cc;
+}
+
+ul, ol {
+  padding: 0;
+  margin: 0 0 10px 25px;
+}
