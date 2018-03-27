@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+.home {
+  margin-top: 100px;
+  color: black;
+}
+
+.container-narrow {
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.card-header {
+  height: 60px;
+}
+
+.card-body {
+  color: white;
+  bg-color: white;
+}

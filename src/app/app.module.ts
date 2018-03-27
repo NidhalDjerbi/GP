@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {FormsModule} from '@angular/forms';
 
+import { AppRoutingModule } from './app-routing.module';
+import { ImageUploadModule } from 'angular2-image-upload';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -15,10 +18,13 @@ import { EditComponent } from './edit/edit.component';
     NavbarComponent,
     HomeComponent,
     AddComponent,
-    EditComponent
+    EditComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    ImageUploadModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

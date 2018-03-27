@@ -1,3 +1,48 @@
-<p>
-  add works!
-</p>
+<div class="add">
+  <div class="container-narrow">
+    <div class="card bg-primary ">
+      <div class="card-header">Add new profile</div>
+      <div class="card bg-white" >
+        <form class="form-group row">
+          <div class="col-md-4">
+            <image-upload
+            [max]="1"
+            [buttonCaption]="'Select Photo'"
+            [dropBoxMessage]="''"
+            (isPending)="disableSendButton($event)"
+
+            onclick="imageUploaded($event)">
+
+            </image-upload>
+            <img src="{{file_src}}" height="180px" width="200px" alt="">
+          </div>
+
+          <div class="col-md-8">
+            <div class="form-group">
+              <label class="col-sm-4 control-label">FullName : </label>
+              <div class="col-sm-8">
+                 <input type="text" class="form-control" name="fullname" required maxlength="30">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="age" class="col-sm-4 control-label">Age : </label>
+              <div class="col-sm-8">
+                <input type="number" class="form-control" name="age" required min="1" max="100">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-sm-offset-4 col-sm-8">
+                  <button type="submit" class="btn btn-success">SAVE</button>
+                  <a class="btn btn-info">CANCEL</a>
+              </div>
+            </div>
+
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
